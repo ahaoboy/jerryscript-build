@@ -48,7 +48,7 @@ jobs:
         run: |
           git clone https://github.com/jerryscript-project/jerryscript.git jerryscript --depth=1
           cd jerryscript
-          python3 tools/build.py --compile-flag=-Wno-maybe-uninitialized
+          python3 tools/build.py --compile-flag=-Wno-uninitialized
 
           mkdir ../dist
 
